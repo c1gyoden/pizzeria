@@ -1,0 +1,11 @@
+Pizzéria weboldal projekt
+Készítők: Nagy Marcell, Gyovai Denisz
+
+Tartalom:
+	bejelentkezés
+	menü
+	kosár + rendelés
+	kapcsolat
+	nyitvatartás
+
+	
