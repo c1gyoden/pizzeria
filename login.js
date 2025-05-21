@@ -3,6 +3,7 @@ const jelszoInput = document.getElementById("jelszoInput")
 const bejelentkezesGomb = document.getElementById("bejelentkezesGomb")
 const loginAblak = document.getElementById("loginAblak")
 const loggedinAblak = document.getElementById("loggedinAblak")
+const kijelentkezesGomb = document.getElementById("kijelentkezesGomb")
 
 if (localStorage.getItem("taroltFelhasznalonev") != null && localStorage.getItem("taroltJelszo") != null){
         loginAblak.style.display = "none"
@@ -18,7 +19,7 @@ bejelentkezesGomb.addEventListener("click", () => {
     }
 })
 
-bejelentkezesGomb.addEventListener("click", () => {
+kijelentkezesGomb.addEventListener("click", () => {
     if (felhasznalonevInput != null && jelszoInput != null) { 
         loginAblak.style.display = "block"
         loggedinAblak.style.display = "none"
