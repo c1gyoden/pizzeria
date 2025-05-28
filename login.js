@@ -27,3 +27,4 @@ kijelentkezesGomb.addEventListener("click", () => {
     }
 })
 
+/* localstorage helyett cookiet kéne használni */

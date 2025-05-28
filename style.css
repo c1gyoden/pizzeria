@@ -1,0 +1,37 @@
+main{
+    background-color: white;
+    height: 70vh;
+    width: 100vw;
+
+}
+header{
+    height: 10vh;
+    background-color: #c50e0e;
+}
+#ikon{
+    width: 5vw;
+}
+.navbar{
+    background-color: #c50e0e;
+    width:100vw;
+    height: 5vh;
+}
+
+nav>div{
+    width: 15%;
+    height: 2vh;
+}
+button{
+    width: 14vw;
+    background-color: orange;
+    border: 2px solid orangered
+}
+button:hover{
+    background-color: orangered;
+}
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: green;
+}
