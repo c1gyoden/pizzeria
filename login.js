@@ -5,26 +5,32 @@ const loginAblak = document.getElementById("loginAblak")
 const loggedinAblak = document.getElementById("loggedinAblak")
 const kijelentkezesGomb = document.getElementById("kijelentkezesGomb")
 
-if (localStorage.getItem("taroltFelhasznalonev") != null && localStorage.getItem("taroltJelszo") != null){
+var bejelentkezve = false
+
+if (sessionStorage.getItem("bejelentkezve") == null){
+    loginAblak.style.display = "block"
+    loggedinAblak.style.display = "none"
+}
+
+if (sessionStorage.getItem("bejelentkezve") != null){
         loginAblak.style.display = "none"
         loggedinAblak.style.display = "block"
 }
 
 bejelentkezesGomb.addEventListener("click", () => {
-    if (felhasznalonevInput != null && jelszoInput != null) { 
+    
         loginAblak.style.display = "none"
         loggedinAblak.style.display = "block"
-        localStorage.setItem("taroltFelhasznalonev", felhasznalonevInput.value)
-        localStorage.setItem("taroltJelszo", jelszoInput.value)
-    }
+        sessionStorage.setItem("taroltFelhasznalonev", felhasznalonevInput.value)
+        sessionStorage.setItem("taroltJelszo", jelszoInput.value)
+        sessionStorage.setItem("bejelentkezve", true)
+    
 })
 
 kijelentkezesGomb.addEventListener("click", () => {
-    if (felhasznalonevInput != null && jelszoInput != null) { 
+    
         loginAblak.style.display = "block"
         loggedinAblak.style.display = "none"
-        localStorage.clear()
-    }
+        sessionStorage.clear()
+    
 })
-
-/* localstorage helyett cookiet kéne használni */
