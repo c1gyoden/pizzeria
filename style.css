@@ -21,6 +21,12 @@ nav>div{
     width: 15%;
     height: 2vh;
 }
+
+h1{
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
 button{
     width: 14vw;
     background-color: orange;
@@ -34,4 +40,22 @@ footer{
     width: 100vw;
     height: auto;
     background-color: green;
+}
+#kosar{
+    width: 15vw;
+    height: 55vh;
+    float: right;
+    border: 2px solid black;
+    position: fixed;
+    right: 1.5vw;
+    top: 16vh;
+}
+#kosarElemek{
+    min-height: 22vh;
+}
+#rendeloTelefon{
+    display: block;
+}
+#rendeloTelefonDisplay{
+    display: inline;
 }

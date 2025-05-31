@@ -13,12 +13,18 @@
         <h1 class="text-center pt-3">Pizzéria <img src="forrasok/ikon.png" alt="" id="ikon"></h1>
     </header>
     <nav class="navbar">
-            <div id="fooldal"><a href="fooldal.html"><button>Főoldal</button></a></div>
-            <div id="bejelentkezés"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
-            <div id="kinalat"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
-            <div id="rolunk"><a href="rolunk.html"><button>Rólunk</button></a></div>
-            <div id="kosar"><a href="kosar.html"><button>Kosár</button></a></div>
-    </nav>
+        <div id="fooldal"><a href="fooldal.html"><button>Főoldal</button></a></div>
+        <div id="bejelentkezés"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
+        <div id="kinalat"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
+        <div id="rolunk"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="kosargomb"><button>Kosár</button></div>
+</nav>
+<aside id="kosar">
+    <h4 class="text-center">Kosár</h4>
+    <div id="kosarElemek"></div>
+    <button id="kosarTorles">Kosár törlése</button>
+    <a href="rendeles.html"><button id="rendeles">Rendelés</button></a>
+</aside>
 
     <main class="container">
         <h2>Rólunk</h2>
@@ -31,5 +37,6 @@
             <li>Email:</li>
     </footer>
     
+    <script src="kosar.js"></script>
 </body>
 </html>

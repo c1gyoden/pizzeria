@@ -32,5 +32,6 @@ kijelentkezesGomb.addEventListener("click", () => {
         loginAblak.style.display = "block"
         loggedinAblak.style.display = "none"
         sessionStorage.clear()
+        kosarFrissitese()
     
 })

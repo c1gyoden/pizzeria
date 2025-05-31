@@ -27,7 +27,23 @@
 </aside>
 
     <main class="container">
-        <h2>Főoldal</h2>
+        <h2 class="mt-3 mb-5">Rendelés</h2>
+        <label for="rendeloNev">Név: </label>
+        <input type="text" id="rendeloNev">
+        <br><br>
+        <label for="rendeloTelefon">Telefonszám: </label> <div id="rendeloTelefonDisplay"></div>
+        <input type="range" id="rendeloTelefon" max="99999999999">
+        
+        <br>
+        <label for="rendeloTelepules">Település: </label>
+        <input type="text" id="rendeloTelepules">
+        <br>
+        <label for="rendeloUtcaHazszam">Utca, házszám: </label>
+        <input type="text" id="rendeloUtcaHazszam">
+        <br><br>
+        <button id="rendelesgomb">Rendelés</button>
+        
+
     </main>
 
     <footer id="footer">
@@ -36,6 +52,8 @@
             <li>Fax:</li>
             <li>Email:</li>
     </footer>
+    
     <script src="kosar.js"></script>
+    <script src="rendeles.js"></script>
 </body>
 </html>
