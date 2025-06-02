@@ -13,28 +13,46 @@
         <h1 class="text-center pt-3">Pizzéria <img src="forrasok/ikon.png" alt="" id="ikon"></h1>
     </header>
     <nav class="navbar">
-        <div id="fooldal"><a href="fooldal.html"><button>Főoldal</button></a></div>
-        <div id="bejelentkezés"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
-        <div id="kinalat"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
-        <div id="rolunk"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="fooldalgomb"><a href="fooldal.html"><button>Főoldal</button></a></div>
+        <div id="rolunkgomb"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="bejelentkezesgomb"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
+        <div id="kinalatgomb"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
         <div id="kosargomb"><button>Kosár</button></div>
-</nav>
-<aside id="kosar">
-    <h4 class="text-center">Kosár</h4>
-    <div id="kosarElemek"></div>
-    <button id="kosarTorles">Kosár törlése</button>
-    <a href="rendeles.html"><button id="rendeles">Rendelés</button></a>
-</aside>
+    </nav>
 
-    <main class="container">
+    <aside id="kosar">
+        <h4 class="text-center">Kosár</h4>
+        <div id="kosarElemek" class="ml-2"></div>
+        <div id="kosarAr" class="ml-2"></div>
+        <div id="kosarbanLevoGombok">
+            <button id="kosarTorles">Kosár törlése</button>
+            <button id="rendelesgomb">Rendelés</button>
+        </div>
+    </aside>
+
+    <main class="container" id="rolunk">
         <h2>Rólunk</h2>
+        <p>A Pizzéria egy kis, független pizzéria, amit 2025 júniusában indítottunk el. Nem többet és nem kevesebbet szeretnénk nyújtani, mint megbízható, egyszerű pizzát, amit frissen készítünk el, és kiszállítunk azoknak, akik gyorsan, otthon szeretnék megoldani az étkezést.</p>
+        <p>Nálunk nincs bonyolult menü – csak pizzát készítünk, abból viszont többféle változatot. Nem célunk különleges lenni, csak szeretnénk, ha nálunk mindig tudnád, mire számíthatsz.</p>
+        <div class="row pt-4">
+            <div class="col-sm-12 col-md-6">
+                <img src="forrasok/CEO_Maci.png">
+                <p class="text-center"><b>Nagy Marcell</b> üzletvezető</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="forrasok/CEO_Denisz.png">
+                <p class="text-center"><b>Gyovai Denisz</b> üzletvezető</p>
+            </div>
+            
+        </div>
     </main>
 
     <footer id="footer">
         <ul>Kapcsolat:<ul>
-            <li>Telefon:</li>
-            <li>Fax:</li>
-            <li>Email:</li>
+
+            <li>✉️ Email: c1gyoden@vasvari.org | c1nagmar@vasvari.org</li>            
+            <li>📠 Fax: nincsen</li>
+            <li>📞 Telefon: +36 30 667 0028</li>
     </footer>
     
     <script src="kosar.js"></script>

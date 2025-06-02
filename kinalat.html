@@ -12,72 +12,77 @@
     <header>
         <h1 class="text-center pt-3">Pizzéria <img src="forrasok/ikon.png" alt="" id="ikon"></h1>
     </header>
+
     <nav class="navbar">
-            <div id="fooldal"><a href="fooldal.html"><button>Főoldal</button></a></div>
-            <div id="bejelentkezés"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
-            <div id="kinalat"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
-            <div id="rolunk"><a href="rolunk.html"><button>Rólunk</button></a></div>
-            <div id="kosargomb"><button>Kosár</button></div>
+        <div id="fooldalgomb"><a href="fooldal.html"><button>Főoldal</button></a></div>
+        <div id="rolunkgomb"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="bejelentkezesgomb"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
+        <div id="kinalatgomb"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
+        <div id="kosargomb"><button>Kosár</button></div>
     </nav>
+
     <aside id="kosar">
         <h4 class="text-center">Kosár</h4>
-        <div id="kosarElemek"></div>
-        <button id="kosarTorles">Kosár törlése</button>
-        <a href="rendeles.html"><button id="rendeles">Rendelés</button></a>
+        <div id="kosarElemek" class="ml-2"></div>
+        <div id="kosarAr" class="ml-2"></div>
+        <div id="kosarbanLevoGombok">
+            <button id="kosarTorles">Kosár törlése</button>
+            <button id="rendelesgomb">Rendelés</button>
+        </div>
     </aside>
 
-    <main class="container">
+    <main class="container" id="kinalat">
         <h2>Kínálat</h2>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/margherita_pizza.jpg" alt="Szalámis pizza">
                 <p>Margherita pizza</p>
                 <p>1900 Ft</p>
                 <button id="p_Margherita pizza_1900" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/szalami_pizza.jpg" alt="Szalámis pizza">
                 <p>Szalámis pizza</p>
                 <p>2100 Ft</p>
                 <button id="p_Szalámis pizza_2100" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/bacon_pizza.jpg" alt="Baconos pizza">
                 <p>Baconos pizza</p>
                 <p>2100 Ft</p>
                 <button id="p_Baconos pizza_2100" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/magyaros_pizza.jpg" alt="Magyaros pizza">
                 <p>Magyaros pizza</p>
                 <p>2300 Ft</p>
                 <button id="p_Magyaros pizza_2300" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/hawaii_pizza.jpg" alt="Hawaii pizza">
                 <p>Hawaii pizza</p>
                 <p>2200 Ft</p>
                 <button id="p_Hawaii pizza_2200" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/kukoricáspizza.jpg" alt="Kukoricás pizza">
                 <p>Kukoricás pizza</p>
                 <p>2100 Ft</p>
                 <button id="p_Kukoricás pizza_2100" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/songoku_pizza.jpg" alt="Songoku pizza">
                 <p>Songoku pizza</p>
                 <p>2400 Ft</p>
                 <button id="p_Songoku pizza_2400" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/gomba_pizza.jpg" alt="Gombás pizza">
                 <p>Gombás pizza</p>
                 <p>2300 Ft</p>
                 <button id="p_Gombás pizza_2300" class="kosarba">Kosárba</button>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <img src="forrasok/tonhalas_pizza.jpg" alt="Tonhalas pizza">
                 <p>Tonhalas pizza</p>
                 <p>2500 Ft</p>
@@ -88,9 +93,10 @@
 
     <footer id="footer">
         <ul>Kapcsolat:<ul>
-            <li>Telefon:</li>
-            <li>Fax:</li>
-            <li>Email:</li>
+
+            <li>✉️ Email: c1gyoden@vasvari.org | c1nagmar@vasvari.org</li>            
+            <li>📠 Fax: nincsen</li>
+            <li>📞 Telefon: +36 30 667 0028</li>
     </footer>
     <script src="kosar.js"></script>
 </body>

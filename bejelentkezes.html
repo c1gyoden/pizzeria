@@ -13,20 +13,24 @@
         <h1 class="text-center pt-3">Pizzéria <img src="forrasok/ikon.png" alt="" id="ikon"></h1>
     </header>
     <nav class="navbar">
-        <div id="fooldal"><a href="fooldal.html"><button>Főoldal</button></a></div>
-        <div id="bejelentkezés"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
-        <div id="kinalat"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
-        <div id="rolunk"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="fooldalgomb"><a href="fooldal.html"><button>Főoldal</button></a></div>
+        <div id="rolunkgomb"><a href="rolunk.html"><button>Rólunk</button></a></div>
+        <div id="bejelentkezesgomb"><a href="bejelentkezes.html"><button>Bejelentkezés</button></a></div>
+        <div id="kinalatgomb"><a href="kinalat.html"><button>Pizzakínálat</button></a></div>
         <div id="kosargomb"><button>Kosár</button></div>
-</nav>
-<aside id="kosar">
-    <h4 class="text-center">Kosár</h4>
-    <div id="kosarElemek"></div>
-    <button id="kosarTorles">Kosár törlése</button>
-    <a href="rendeles.html"><button id="rendeles">Rendelés</button></a>
-</aside>
+    </nav>
 
-    <main class="container">
+    <aside id="kosar">
+        <h4 class="text-center">Kosár</h4>
+        <div id="kosarElemek" class="ml-2"></div>
+        <div id="kosarAr" class="ml-2"></div>
+        <div id="kosarbanLevoGombok">
+            <button id="kosarTorles">Kosár törlése</button>
+            <button id="rendelesgomb">Rendelés</button>
+        </div>
+    </aside>
+
+    <main class="container" id="bejelentkezes">
         
         <div id="loginAblak">
             <h2>Bejelentkezés</h2>
@@ -48,9 +52,10 @@
 
     <footer id="footer">
         <ul>Kapcsolat:<ul>
-            <li>Telefon:</li>
-            <li>Fax:</li>
-            <li>Email:</li>
+
+            <li>✉️ Email: c1gyoden@vasvari.org | c1nagmar@vasvari.org</li>            
+            <li>📠 Fax: nincsen</li>
+            <li>📞 Telefon: +36 30 667 0028</li>
     </footer>
     
     <script src="kosar.js"></script>

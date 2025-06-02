@@ -1,35 +1,39 @@
+html{
+    height: 100%;
+    width: 99vw;
+    overflow-x: hidden;
+}
 main{
     background-color: white;
-    min-height: 74vh;
-    width: 100vw;
+    min-height: 73vh;
+    width: 99vw;
+    text-align: center;
 
 }
 header{
     height: 10vh;
     background-color: #c50e0e;
 }
-#ikon{
-    width: 5vw;
-}
+
 .navbar{
     background-color: #c50e0e;
-    width:100vw;
-    height: 5vh;
+    width: 99vw;
+    min-height: 7vh;
+}
+
+footer{
+    width: 99vw;
+    min-height: 12vh;
+    background-color: green;
+    color: rgb(211, 210, 209);
+}
+#ikon{
+    width: 5vw;
 }
 
 nav>div{
     width: 15%;
     height: 2vh;
-}
-
-h1{
-    color: white;
-    text-shadow: 2px 2px gray;
-}
-h2{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 3vh;
 }
 
 button{
@@ -41,22 +45,41 @@ button:hover{
     background-color: orangered;
 }
 
-footer{
-    width: 100vw;
-    height: 11vh;
-    background-color: green;
+h1{
+    color: white;
+    text-shadow: 2px 2px gray;
 }
+h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
 #kosar{
     width: 15vw;
-    height: 55vh;
+    min-height: auto;
     float: right;
     border: 2px solid black;
     position: fixed;
     right: 1.5vw;
-    top: 16vh;
+    top: 18vh;
+    box-shadow: 2px 2px gray;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 1vh;
 }
 #kosarElemek{
-    min-height: 22vh;
+    min-height: 30vh;
+}
+#kosarAr{
+    height: 2em;
+}
+#kosarbanLevoGombok{
+    text-align: center;
+}
+#kosarTorles{
+    margin-bottom: 3px;
 }
 #rendeloTelefon{
     display: block;
@@ -64,16 +87,31 @@ footer{
 #rendeloTelefonDisplay{
     display: inline;
 }
-.row img{
+#kinalat img{
     width: 200px;
     height: 100px;
 }
-.row>div{
+#kinalat div{
     text-align: center;
 }
-.row p{
+#kinalat p{
     margin: 0.5vh;
 }
 .kosarba{
     margin-bottom: 5vh;
+}
+#fooldal p{
+    font-size: 20px;
+    line-height: 3rem;
+}
+#loginAblak, #loggedinAblak{
+    padding-top: 5vh
+}
+#rolunk img{
+    width: 20vw;
+    height: 30vh;
+}
+#rolunk>p{
+    font-size: 20px;
+    text-align: justify;
 }

@@ -1,5 +1,5 @@
 const rendeloTelefon = document.getElementById("rendeloTelefon")
-const rendelesgomb = document.getElementById("rendelesgomb")
+const rendelesLeadasaGomb = document.getElementById("rendelesLeadasaGomb")
 const rendeloTelefonDisplay = document.getElementById("rendeloTelefonDisplay")
 
 rendeloTelefon.addEventListener("input", () =>{
@@ -7,6 +7,12 @@ rendeloTelefon.addEventListener("input", () =>{
 }
 )
 
-rendelesgomb.addEventListener("click", () => {
-    alert("A megadott településre nem szállítunk pizzát!")
+rendelesLeadasaGomb.addEventListener("click", () => {
+    if (sessionStorage.getItem("ar") == 0 || sessionStorage.getItem("ar") == null){
+        alert("Üres a kosarad!")
+    }
+    else{
+        alert("Sajnáljuk, de a megadott településre nem szállítunk pizzát!")
+    }
+
 })
