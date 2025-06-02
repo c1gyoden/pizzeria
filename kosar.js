@@ -53,3 +53,6 @@ kosarTorles.addEventListener("click", () => {
 
 
 kosarFrissitese()
+
+
+/*TODO: Árak kiírását meg kell még csinálni */
