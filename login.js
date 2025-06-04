@@ -34,6 +34,7 @@ kijelentkezesGomb.addEventListener("click", () => {
 
         sessionStorage.clear()
         sessionStorage.setItem("kosarLathato", kosarLathato)
+        kosarTorlese()
         kosarFrissitese()
     
 })

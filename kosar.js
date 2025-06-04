@@ -56,6 +56,10 @@ function kosarFrissitese(){
 }
 
 kosarTorles.addEventListener("click", () => {
+    kosarTorlese()
+})
+
+function kosarTorlese(){
     Object.keys(sessionStorage).forEach(k => {
         if (k.split('_')[0] == "p"){
             sessionStorage.setItem(k, 0)
@@ -64,7 +68,7 @@ kosarTorles.addEventListener("click", () => {
         kosarAr.innerHTML = ``
         sessionStorage.setItem("ar", 0)
     })
-})
+}
 
 rendelesGomb.addEventListener("click", () => {
     if (sessionStorage.getItem("bejelentkezve") == null){
